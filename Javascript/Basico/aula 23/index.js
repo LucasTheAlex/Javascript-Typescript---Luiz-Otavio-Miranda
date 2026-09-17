@@ -1,0 +1,25 @@
+/** 
+ * Primitivos(Imutaveis) - string, number, boolean, undefined, null. bigint, symbol
+ * Valores copiados
+*/
+let a = 'A';
+let b = a; // copia
+console.log(a, b);
+
+a = 'Outra coisa';
+console.log(a, b);
+
+/**
+ * Referencia (Mutavel) - Arrays, Object, Function
+ * Valores por referencia
+ */
+let c = [1, 2, 3];
+let d = c;
+let e = [...c]; // copia
+console.log(c, d, e);
+
+c.push(4);
+console.log(c, d, e);
+
+d.pop();
+console.log(c, d, e);
